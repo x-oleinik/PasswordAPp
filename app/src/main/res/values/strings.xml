@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">PasswordAPp</string>
+    <string name="hellotext">Here You can take a look at Your password that was created via russian keyboard layout</string>
+
+    <string-array name="russians">
+        <item>й</item>
+        <item>ц</item>
+        <item>у</item>
+        <item>к</item>
+        <item>е</item>
+        <item>н</item>
+        <item>г</item>
+        <item>ш</item>
+        <item>щ</item>
+        <item>з</item>
+        <item>х</item>
+        <item>ъ</item>
+        <item>ф</item>
+        <item>ы</item>
+        <item>в</item>
+        <item>а</item>
+        <item>п</item>
+        <item>р</item>
+        <item>о</item>
+        <item>л</item>
+        <item>д</item>
+        <item>ж</item>
+        <item>э</item>
+        <item>я</item>
+        <item>ч</item>
+        <item>с</item>
+        <item>м</item>
+        <item>и</item>
+        <item>т</item>
+        <item>ь</item>
+        <item>б</item>
+        <item>ю</item>
+        <item>ё</item>
+    </string-array>
+
+    <string-array name="english">
+        <item>q</item>
+        <item>w</item>
+        <item>e</item>
+        <item>r</item>
+        <item>t</item>
+        <item>y</item>
+        <item>u</item>
+        <item>i</item>
+        <item>o</item>
+        <item>p</item>
+        <item>[</item>
+        <item>]</item>
+        <item>a</item>
+        <item>s</item>
+        <item>d</item>
+        <item>f</item>
+        <item>g</item>
+        <item>h</item>
+        <item>j</item>
+        <item>k</item>
+        <item>l</item>
+        <item>;</item>
+        <item>\'</item>
+        <item>z</item>
+        <item>x</item>
+        <item>c</item>
+        <item>v</item>
+        <item>b</item>
+        <item>n</item>
+        <item>m</item>
+        <item>,</item>
+        <item>.</item>
+        <item>`</item>
+    </string-array>
+
+    <string-array name="strengths">
+        <item>(сила пароля)</item>
+        <item>Awful</item>
+        <item>Super bad</item>
+        <item>Bad</item>
+        <item>Weak</item>
+        <item>A bit weak</item>
+        <item>Normal</item>
+        <item>Better then normal</item>
+        <item>Nice</item>
+        <item>Rly nice</item>
+        <item>Perfect!</item>
+    </string-array>
+
+    <plurals name="symbols_count">
+        <item quantity="one">symbol</item>
+        <item quantity="many">symbols</item>
+    </plurals>
+
+    <string name="length_format">Length: 8 + %1$d %2$s = %3$d %4$s</string>
+
+
+
+</resources>

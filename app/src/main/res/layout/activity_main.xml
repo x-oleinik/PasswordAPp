@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="@dimen/dimen8dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="374dp"
+        android:layout_height="64dp"
+        android:text="@string/hellotext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="374dp"
+        android:layout_height="64dp"
+        android:background="@drawable/resultbackground"
+        android:gravity="center"
+        android:layout_margin="@dimen/dimen8dp">
+        
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="256dp"
+            android:layout_height="32dp"
+            android:layout_margin="@dimen/dimen8dp"/>
+
+        <ImageButton
+            android:id="@+id/copy_button"
+            android:src="@drawable/ic_copy"
+            android:backgroundTint="@color/colorAccent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/input_password"
+        android:hint="Enter your password"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:layout_width="374dp"
+        android:layout_height="64dp"
+        android:layout_margin="@dimen/dimen8dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/pass_strength_tv"
+            android:layout_width="174dp"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            tools:text="Weak"/>
+        <ImageView
+            android:id="@+id/pass_strength_iv"
+            android:layout_width="174dp"
+            android:layout_height="32dp"
+            android:src="@drawable/pass_strength"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="374dp"
+        android:layout_height="64dp"
+        android:text="Generate a new password"
+        android:gravity="center"
+        android:layout_margin="@dimen/dimen8dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content">
+
+    <CheckBox
+        android:id="@+id/capitals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capitals"/>
+    <CheckBox
+        android:id="@+id/digits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Digits"/>
+    <CheckBox
+        android:id="@+id/specials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specials"/>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen8dp"/>
+
+    <TextView
+        android:id="@+id/pass_length"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:text="Length: "/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="374dp"
+        android:layout_height="64dp"
+        android:background="@drawable/resultbackground"
+        android:gravity="center"
+        android:layout_margin="@dimen/dimen8dp">
+
+        <TextView
+            android:id="@+id/generated_password"
+            android:layout_width="256dp"
+            android:layout_height="32dp"
+            android:layout_margin="@dimen/dimen8dp"/>
+
+        <ImageButton
+            android:id="@+id/copy_button2"
+            android:src="@drawable/ic_copy"
+            android:backgroundTint="@color/colorAccent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/generate_button"
+        android:background="@drawable/button"
+        android:layout_width="374dp"
+        android:layout_height="64dp"
+        android:text="Generate"
+        android:layout_margin="@dimen/dimen8dp"/>
+
+</LinearLayout>
